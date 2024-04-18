@@ -29,3 +29,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	return (new_table);
 }
+
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
+	return (0);
+}
