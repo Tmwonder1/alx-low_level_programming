@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Define the directory name
+DIR_NAME="skiplist"
+
+# Define an array of file names
+FILE_NAMES=("create_skiplist.c" "print_skiplist.c" "free_skiplist.c")
+
+# Create the directory
+mkdir -p $DIR_NAME
+
+# Loop to create files with custom names
+for FILE_NAME in "${FILE_NAMES[@]}"; do
+    # Create each file with the specified name
+    touch "$DIR_NAME/$FILE_NAME"
+done
+
+echo "Created files with custom names in $DIR_NAME"
